@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .container{
+  height:100vh;
+  width:100%;
+  background-color: black;
+} */
+.box{
+  height:100px;
+  width:200px;
+  text-align:center;
+  border:2px solid black;
+  transition-duration:5s;
+  transition-property: all;
+  transition-delay: 2s;
+  /* transition-property:background-color; */
+  /* transition:all 5s ease 2s; */
+}
+
+.container:hover > div {
+  background-color: rgb(227, 218, 36);
+  width:800px;
+  
+}
+.linear{
+  transition-timing-function: linear;
+  background-color: rgb(124, 21, 220);
+}
+.ease{
+  transition-timing-function: ease;
+  background-color: rgb(235, 22, 220);
+}
+.ease-in{
+  transition-timing-function: ease-in;
+  background-color: rgb(228, 17, 17);
+}
+.ease-out{
+  transition-timing-function: ease-out;
+  background-color: rgb(49, 11, 218);
+}
+.ease-in-out{
+  transition-timing-function: ease-in-out;
+  background-color: rgb(24, 206, 185);
+}

@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+}
+.wrapper{
+  /* height:300px;
+  width:300px; */
+  /* background-color: dimgray;
+  width:50%;
+  height:50%; */
+  font-size:40px;
+}
+h1{
+  font-size:40px;
+}
+span{
+  /* display:inline-block;
+  width:45%;
+  height:45%;
+  background-color: chartreuse; */
+}
+p{
+  font-size:5em;
+}
+section{
+  font-size:2em;
+}
+.para{
+  font-size:2em;
+}
+html{
+  font-size:20px;
+}
+.root{
+  font-size:5rem
+}

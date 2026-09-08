@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.grid-container{
+  display:grid;
+  grid-template-columns: repeat(4 , 1fr);
+  width:1000px;
+  min-height:50vh;
+  margin:auto;
+  border:1px solid black;
+  text-align:center;
+}
+.grid-items{
+  background-color: aqua;
+  border:1px solid rgb(212, 12, 12);
+  /* height:100px; */
+}
+.item1{
+  grid-row:1/4;
+}
+.item2{
+  grid-column:2/4;
+}
+.item7{
+  grid-area:2/4/4/5;
+}

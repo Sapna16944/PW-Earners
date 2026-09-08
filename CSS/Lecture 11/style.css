@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* color-gradiant */
+
+#rapper1{
+  height:200px;
+  /* background:linear-gradient(to right, red, blue); */
+  background:linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+}
+
+#rapper2{
+  height:200px;
+  background:radial-gradient(circle, violet, indigo, blue, green, yellow, orange, red);
+  
+}
+
+#rapper3{
+  height:200px;
+  background:conic-gradient( violet, indigo, blue, green, yellow, orange, red);
+  
+}
+
+/* background-image */
+
+#rapper4{
+  height:400px;
+  width:400px;
+  border:1px solid black;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /*background-size: contain; */    /* thoda space bch jata h */
+  background-size: cover;  /*image cut jati h */
+  
+}
+#rapper5{
+  height:500px;
+  border:5px solid red;
+  border-radius: 10px;
+  padding:20px;
+  margin:40px;
+}
+p{
+  border:5px groove blue;
+}
+#daisy{
+  border:1px solid black;
+  margin:auto;
+  text-align: center;
+}
+#mahi{
+  /* width is compulsory to give margin:auto */
+  width:100px;
+  margin:auto;
+  border:1px solid black;
+}
+#bholu1{
+  /* margin: left and right work only */
+  /* height and width doesn't work on inline element */
+  display:inline-block;
+  padding:20px;
+  margin:50px;
+  border:1px solid black;
+  background-color: darkcyan;
+}
+#bholu2{
+  border:1px solid black;
+}

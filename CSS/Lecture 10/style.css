@@ -1,0 +1,44 @@
+h5{
+  color:rgba(255, 0, 0, 0.786);
+  background-color: rgba(137, 43, 226, 0.348);
+}
+#one{
+  font-family:"Yuyu";
+  text-indent:30px;
+}
+#two{
+  font-size:xx-large;
+  text-shadow:5px 5px 5px black;
+}
+#three{
+  font-style:italic;
+  font-variant: small-caps;
+  
+}
+#four{
+  text-align: center;
+  border:1px solid black;
+}
+p{
+  font-size:30px;
+  font-weight:bolder;
+}
+span{
+  text-align: center;
+  border:1px solid black;
+  display:block;
+  /* text-decoration:underline dashed 2px red;
+  text-decoration:line-through;
+  text-transform:capitalize; */
+  
+}
+#lorem{
+  line-height:2 ;
+  letter-spacing: 5px;
+  word-spacing: 30px;
+}
+.yuyu-regular {
+  font-family: "Yuyu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

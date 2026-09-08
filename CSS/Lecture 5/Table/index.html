@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+  <style>
+    table,
+    tr,
+    td,
+    th,
+    tfoot {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Tables</h1>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <h1>Student's Scores</h1>
+
+    <table>
+      <caption>Student's Score</caption>
+      <thead>
+        <tr>
+          <th>Students/Subjects</th>
+          <th>Maths</th>
+          <th>Hindi</th>
+          <th>English</th>
+          <th>Science</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Sapna</td>
+          <td>90</td>
+          <td>50</td>
+          <td>59</td>
+          <td>97</td>
+        </tr>
+        <tr>
+          <td>Khushbu</td>
+          <td>87</td>
+          <td>90</td>
+          <td>45</td>
+          <td>78</td>
+        </tr>
+        <tr>
+          <td>Nikita</td>
+          <td>78</td>
+          <td>43</td>
+          <td>23</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>Neha</td>
+          <td>76</td>
+          <td>96</td>
+          <td>90</td>
+          <td>56</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <th>Total</th>
+        <th>476</th>
+        <th>354</th>
+        <th>234</th>
+        <th>654</th>
+      </tfoot>
+
+    </table>
+  </div>
+
+  <br><br>
+  
+  <div>
+    <table>
+      <caption>A test table with merged cells</caption>
+      
+      <tbody>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2">Average</th>
+          
+          <th rowspan="2">Red eyes</th>
+        </tr>
+
+        <tr>
+          
+          <th>height</th>
+          <th>weight</th>
+          
+        </tr>
+
+        <tr>
+          <th>Males</th>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <th>Females</th>
+          <td>1.7</td>
+          <td>0.002</td>
+          <td>43%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

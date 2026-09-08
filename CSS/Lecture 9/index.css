@@ -1,0 +1,101 @@
+/* universal selector */
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* element selector */
+span {
+  color: blueviolet;
+}
+h3 {
+  color: coral;
+}
+a, li{
+  color:fuchsia
+}
+
+
+/* class selector */
+.heading{
+  color:teal
+}
+
+
+/* id selector */
+#nihal{
+  color:brown;
+  background-color: darkgrey;
+}
+
+/* descendant combinator */
+
+/* div p{
+  color:blue;
+} */
+
+
+/* child combinator */
+
+/* div > p{
+  color:blue;
+} */
+
+
+/* adjacent sibling combinator */
+
+/* a+p{
+  color:blue;
+} */
+
+
+/* general sibling combinator */
+
+a~p{
+  color:blue;
+}
+
+
+/* pseudo class */
+
+/* h1:hover{
+  background-color:aqua
+}
+li:hover{
+  color:red;
+} */
+
+/* li:first-child{
+  color:green;
+} */
+
+/* li:last-child{
+  color:green;
+} */
+
+ /* li:nth-child(2n){
+  color:blueviolet
+ } */
+
+
+ /* pseudo elements */
+
+h1::after{
+  content:" hello";
+}
+
+h1::before{
+  content:" hey ";
+}
+
+h1::first-letter{
+  color:red;
+  font-size:80px;
+}
+
+h1::selection{
+  color:chartreuse;
+  background-color: dimgray;
+}
+
