@@ -6,11 +6,10 @@ const taskCount = document.querySelector("#task-count");
 const completeCount = document.querySelector("#complete-count");
 
 // "Go to gym", "Revision web dev", "Take class"
-let todos = [
-  { id: Date.now() + 1, text: "Go to gym", isCompleted: false },
-  { id: Date.now() + 2, text: "Revision web dev", isCompleted: false },
-  { id: Date.now() + 3, text: "Take class", isCompleted: false },
-];
+
+
+let todos = JSON.parse(localStorage.getItem("todos")) || [];
+console.log(todos);
 
 let editTodoId = null;
 
@@ -34,6 +33,7 @@ todoForm.addEventListener("submit", (e) => {
       }
       return todo;
     });
+    localStorage.setItem("todos", JSON.stringify(todos));
   } else {
     //adding
     let newTodo = {
@@ -42,6 +42,7 @@ todoForm.addEventListener("submit", (e) => {
       isCompleted: false,
     };
     todos.push(newTodo);
+    localStorage.setItem("todos", JSON.stringify(todos));
   }
   todoInput.value = "";
   formBtn.textContent = "Add";
@@ -111,6 +112,7 @@ todoList.addEventListener("click", (e) => {
       }
       return todo;
     });
+    localStorage.setItem("todos", JSON.stringify(todos));
     renderTodo();
   }
 });
@@ -125,8 +127,9 @@ function deleteTodo(e, id) {
       return todo;
     }
   });
-  console.log(todos);
-  //renderTodo();
+  localStorage.setItem("todos", JSON.stringify(todos));
+  //console.log(todos);
+  renderTodo();
 }
 
 /*=============EDIT TODO =================== */
